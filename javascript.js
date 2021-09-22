@@ -10,4 +10,4 @@ function enableDropdown() {
     selectBox.classList.add('active');
 }
 
-disableDropdown()
+enableDropdown()
