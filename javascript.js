@@ -84,13 +84,13 @@ function closeAllSelect(elmnt) {
 then close all select boxes:*/
 // document.addEventListener("click", closeAllSelect);
 
-// let checkbox = document.getElementById('check');
-// function box() {
-// if (checkbox.checked === true) {
-//     console.log("yes");
+let checkbox = document.getElementById('check');
+function check() {
+if (checkbox.checked === true) {
+  a.classList.add('disable')
     
-// }
-// else {
-//     console.log("noe");
-// }
-// }
+}
+else {
+    a.classList.remove('disable');
+}
+}
