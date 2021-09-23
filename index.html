@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>     
 
-</head>
 <body>
 
-<h2>Dropdown Menu</h2>
-<p>Move the mouse over the button to open the dropdown menu.</p>
+<h2>Custom Select</h2>
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a class="link-header">Title no 1</a>
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-    <a class="link-header">Title No 2</a>
-    <a href="#">Link 4</a>
-    <a href="#">Link 5</a>
-    <a href="#">Link 6</a>
-  </div>
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="option-div">
+    <input type="checkbox" onclick="check()" id="check"><span class="check-text">Disabled</span>
+</div>
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Select car:</option>
+    <option value="1">Cars heading1</option>
+    <option value="2">BMW</option>
+    <option value="3">Citroen</option>
+    <option value="4">Ford</option>
+    <option value="5">Honda</option>
+    <option value="6">Cars heading2</option>
+    <option value="7">Land Rover</option>
+    <option value="8">Mercedes</option>
+    <option value="9">Mini</option>
+    <option value="10">Nissan</option>
+    <option value="11">Toyota</option>
+    <option value="12">Volvo</option>
+  </select>
 </div>
 
-</body>
-</html>
+<script src="javascript.js">
+</script>
 
-  
-    <script src="javascript.js"> // The main script don't call the function in this script
-    </script>
-
-    <script> // Call the function in this script i.e enableDropdown() it wll enable the dropdown box
-    </script>
 </body>
 </html>
