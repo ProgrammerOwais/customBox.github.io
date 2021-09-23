@@ -88,9 +88,11 @@ let checkbox = document.getElementById('check');
 function check() {
 if (checkbox.checked === true) {
   a.classList.add('disable')
+  b.classList.add('disappear')
     
 }
 else {
     a.classList.remove('disable');
+    b.classList.remove('disappear')
 }
 }

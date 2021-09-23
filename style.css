@@ -1,5 +1,7 @@
 .option-div {
-  border: 1px solid red;
+  border: 1px solid black;
+  padding:5px;
+  margin-bottom: 0.3rem;
   width: 10%;
 }
 
@@ -48,9 +50,11 @@
   cursor: pointer;
   user-select: none;
 }
-.select-items div,.disable.select-selected {
+
+.disable.select-selected {
   pointer-events: none;
   background-color: hsl(210, 100%, 76%);
+
 }
 
 /*style items (options):*/
@@ -91,6 +95,9 @@
   color: black;
   font-weight: 600;
   cursor: unset;
+}
+.select-items.disappear {
+  display: none;
 }
 
 /* .inactive.custom-select {
