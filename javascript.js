@@ -5,7 +5,7 @@ x = document.getElementsByClassName("custom-select");
 l = x.length;
 console.log(l);
 for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
+  selElmnt = x[i].getElementsByClassName("list-box1")[0];
   ll = selElmnt.length;
   /*for each element, create a new DIV that will act as the selected item:*/
   a = document.createElement("DIV");
@@ -20,6 +20,10 @@ for (i = 0; i < l; i++) {
     create a new DIV that will act as an option item:*/
     c= document.createElement("div");
     c.innerHTML = selElmnt.options[j].innerHTML;
+    if (selElmnt.options[j].className === "option-header") { // To make some options as a header by adding option header-class
+      c.classList.add('option-header');
+      
+    }
     
        c.addEventListener("click", function(e) {
       /*when an item is clicked, update the original select box,

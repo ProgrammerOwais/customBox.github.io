@@ -67,16 +67,6 @@
   z-index: 99;
 }
 
-.select-items div:first-of-type , .select-items div:nth-of-type(6){
-  pointer-events: none;
-  background-color: yellow;
-  padding: 0.5rem auto;
-  font-size: 1.2rem;
-  color: black;
-  font-weight: 600;
-  cursor: unset;
-}
-
 /*hide the items when the select box is closed:*/
 .select-hide {
   display: none;
@@ -86,8 +76,7 @@
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
-.select-items div:first-of-type:hover,
-.select-items div:nth-of-type(6):hover{
+.custom-select .option-header {
   pointer-events: none;
   background-color: yellow;
   padding: 0.4rem auto;
@@ -95,16 +84,18 @@
   color: black;
   font-weight: 600;
   cursor: unset;
+
+}
+.custom-select .option-header:hover {
+  pointer-events: none;
+  background-color: yellow;
+  padding: 0.4rem auto;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+  cursor: unset;
+
 }
 .select-items.disappear {
   display: none;
 }
-
-/* .inactive.custom-select {
-  background-color: hsl(210, 100%, 86%);
-  cursor: unset;
-}
-.inactive.select-selected {
-  background-color: hsl(210, 100%, 86%);
-  cursor: unset;
-} */
