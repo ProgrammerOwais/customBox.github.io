@@ -1,19 +1,34 @@
-.option-div {
-  border: 1px solid black;
-  padding:5px;
-  margin-bottom: 0.3rem;
-  width: 10%;
+
+.input-container {
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
-
-
-
+.text-box {
+  width: 30%;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border: 2px solid rgb(56, 55, 55);
+  outline: none;
+  border-radius: 10px;
+}
 /*the container must be positioned relative:*/
 .custom-select {
+  display: inline-block;
+  margin-right: 0.2rem;
+  position: relative;
+  font-family: Arial;
+}
+.custom-select1 {
+  margin-right: 0.2rem;
+  display: inline-block;
   position: relative;
   font-family: Arial;
 }
 
 .custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.custom-select1 select {
   display: none; /*hide original SELECT element:*/
 }
 
@@ -46,12 +61,13 @@
   /* background-color: hsl(210, 100%, 76%); */
   padding: 8px 16px;
   border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
   cursor: pointer;
   user-select: none;
 }
 
-.disable.select-selected {
+
+.select-selected.disable {
   pointer-events: none;
   background-color: hsl(210, 100%, 76%);
 
@@ -75,7 +91,9 @@
 
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+
 }
+
 .custom-select .option-header {
   pointer-events: none;
   background-color: yellow;
@@ -86,7 +104,27 @@
   cursor: unset;
 
 }
+.custom-select1 .option-header {
+  pointer-events: none;
+  background-color: yellow;
+  padding: 0.4rem auto;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+  cursor: unset;
+
+}
 .custom-select .option-header:hover {
+  pointer-events: none;
+  background-color: yellow;
+  padding: 0.4rem auto;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+  cursor: unset;
+
+}
+.custom-select1 .option-header:hover {
   pointer-events: none;
   background-color: yellow;
   padding: 0.4rem auto;
